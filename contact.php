@@ -1,3 +1,7 @@
+<?php
+    include_once 'connexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +53,7 @@
                         </li>
 
                         <li class="nav-item mr-1 active">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
 
                     </ul>
@@ -67,7 +71,7 @@
                     <br><br><br><br>
 
                     <h3>Contactez-moi</h3>
-                    <form action="#" method="POST">
+                    <form action="contact.php" method="POST">
                         <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -84,13 +88,15 @@
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Prénom" name="prenom" </div> <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control" placeholder="Prénom" name="prenom" />
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" name="email">
+                            <input type="text" class="form-control" placeholder="Email" name="email" />
                         </div>
 
                         <div class="input-group input-group-lg mb-3">
@@ -99,7 +105,7 @@
                                     <i class="fas fa-pencil-alt"></i>
                                 </span>
                             </div>
-                            <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                            <textarea class="form-control" placeholder="Message" rows="5" name="message"></textarea>
                         </div>
 
                         <input type="submit" value="Envoyer" class="btn btn-light btn-block btn-lg" name="submit">
