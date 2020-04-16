@@ -78,7 +78,7 @@ h1 {
 }
 
 .contact-bandeau1 {
-    /* background-image: url(ML-Logo-1.png); */
+    /* background-image: url(./assets/images/ML-Logo-1.png); */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

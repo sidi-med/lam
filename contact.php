@@ -1,3 +1,7 @@
+<?php
+    include_once 'connexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -49,7 +53,7 @@
                         </li>
 
                         <li class="nav-item mr-1 active">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
 
                     </ul>
@@ -67,7 +71,7 @@
                     <br><br><br><br>
 
                     <h3>Contactez-moi</h3>
-                    <form action="#" method="POST">
+                    <form action="contact.php" method="POST">
                         <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -84,13 +88,15 @@
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Prénom" name="prenom" </div> <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control" placeholder="Prénom" name="prenom" />
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" name="email">
+                            <input type="text" class="form-control" placeholder="Email" name="email" />
                         </div>
 
                         <div class="input-group input-group-lg mb-3">
@@ -99,7 +105,7 @@
                                     <i class="fas fa-pencil-alt"></i>
                                 </span>
                             </div>
-                            <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                            <textarea class="form-control" placeholder="Message" rows="5" name="message"></textarea>
                         </div>
 
                         <input type="submit" value="Envoyer" class="btn btn-light btn-block btn-lg" name="submit">
@@ -110,23 +116,25 @@
         </div>
     </section>
 
-    <section id="footer2">
-        <div class="container fixed-bttom" style="padding-top: 0; padding-bottom: 0;">
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <p>Tous Droits Réservés ©
-                        <span id="year">2019</span> Mohamed LAM</p>
+    <div>
+        <section id="footer2" style="position: absolute;width: 100%;height: 49px;bottom: 0;left: 0;right: 0;">
+            <div class="container fixed-bttom" style="padding-top: 0;padding-bottom: 0;margin-top: 15px;">
+                <div class="row align-items-center text-center">
+                    <div class="col">
+                        <p>Tous Droits Réservés ©
+                            <span id="year">2020</span> Mohamed LAM</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
